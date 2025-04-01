@@ -1,0 +1,25 @@
+
+
+:root {
+    --lineHeight: 3em;
+}
+
+.menuBar {
+    width: 100%;
+    box-sizing:border-box;
+    height: var(--lineHeight);
+    outline: 1px solid black;
+    background-color: aqua;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+
+
+}
+
+.menuItem {
+    text-align: center;
+    line-height: var(--lineHeight);
+    height: 100%;
+    outline: 1px solid black;
+}
