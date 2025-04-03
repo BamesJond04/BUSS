@@ -20,8 +20,6 @@
 .menuBar a {
     text-align: center;
     line-height: var(--lineHeight);
-    line-height: 20em;
-    font-size:20pt;
     height: 100%;
     outline: 1px solid black;
 
@@ -29,7 +27,7 @@ a:link, a:visited {
     color: black;
     text-decoration: none;
 
-.menuBar a:hover {
+.menuBar:hover {
     background-color: yellow;
 }
 
