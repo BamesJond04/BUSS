@@ -17,9 +17,8 @@
 
 }
 
-.menuItem {
+.menuBar a {
     text-align: center;
     line-height: var(--lineHeight);
     height: 100%;
     outline: 1px solid black;
-}
