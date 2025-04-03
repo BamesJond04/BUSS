@@ -20,6 +20,7 @@
 .menuBar a {
     text-align: center;
     line-height: var(--lineHeight);
+    line-height: 20em;
     height: 100%;
     outline: 1px solid black;
 
