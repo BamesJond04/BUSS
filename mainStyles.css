@@ -29,6 +29,7 @@
 
 .menuBar:hover {
     background-color: yellow;
+    color: pink;
 }
 
 .menuBar #active {
