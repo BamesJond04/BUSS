@@ -23,7 +23,7 @@
     height: 100%;
     outline: 1px solid black;
 
-a:link, a:visited {
+.menuBar a:link, .menuBar a:visited {
     color: black;
     text-decoration: none;
 
@@ -31,7 +31,7 @@ a:link, a:visited {
     background-color: yellow;
 }
 
-#active {
+.menuBar #active {
     background-color: green;
 }
 
