@@ -2,15 +2,24 @@
 
 :root {
     --lineHeight: 3em;
+    --menuBarDefault: aqua;
+    --menuBarActive: green;
+    --menuBarHover: yellow;
+}
+
+@keyframes onHoverAnimation {
+    100% {
+        background-color: var(--menuBarHover);
+    }
 }
 
 .menuBar {
     width: 100%;
     box-sizing:border-box;
-    height: var(--lineHeight);
-    outline: 1px solid black;
-    background-color: aqua;
+    height: auto;
+    background-color: var(--menuBarDefault);
     display: grid;
+    border: 2px;
     align-items: center;
     grid-template-columns: repeat(4,1fr);
 }
@@ -18,8 +27,9 @@
 .menuBar a {
     text-align: center;
     line-height: var(--lineHeight);
+    border: solid;
+    border-width: 1px;
     height: 100%;
-    outline: 1px solid black;
 }
 
 .menuBar a:link, .menuBar a:visited {
@@ -28,18 +38,25 @@
 }
     
 a:hover {
-    background-color: yellow;
-    color: pink;
+    animation: onHoverAnimation 100ms linear;
+    animation-fill-mode: forwards;
 }
 
 #activePlace {
-    background-color: green;
+    background-color: var(--menuBarActive);
 }
 
 
 
 .calendar {
     width: 100%;
-    height: 15%;
-    outline: 1px solid black;
+    height: 20em;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    border: 1px solid var(--menuBarDefault);
 }
