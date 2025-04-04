@@ -27,12 +27,12 @@
     color: black;
     text-decoration: none;
 
-.menuBar:hover {
+a:hover {
     background-color: yellow;
     color: pink;
 }
 
-.menuBar #active {
+#active {
     background-color: green;
 }
 
