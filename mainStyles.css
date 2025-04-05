@@ -5,27 +5,58 @@
     --menuBarDefault: aqua;
     --menuBarActive: green;
     --menuBarHover: yellow;
+
+    --tl: #E58237;
+    --tm: #928875;
+    --tr: #0881B0;
+
+    --ml: #9A5833;
+    --mm: #8F6F73;
+    --mr: #63769C;
+
+    --bl: #1C213E;
+    --bm: #A7425A;
+    --br: #DF5B65;
+
+
+
 }
 
 @keyframes onHoverAnimation {
     100% {
-        background-color: var(--menuBarHover);
+        background-color: var(--tl);
     }
 }
 
 .menuBar {
     width: 100%;
     box-sizing:border-box;
-    height: auto;
-    background-color: var(--menuBarDefault);
+    aspect-ratio: 5/1;
+    background-color: rgba(21, 195, 169, 0.7);
     display: grid;
     border: 2px;
     align-items: center;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
+}
+
+.logoImage {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.logoImage img {
+    width: 100%;
+    background-color: white;
 }
 
 .menuBar a {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: var(--lineHeight);
     border: solid;
     border-width: 1px;
@@ -43,7 +74,7 @@ a:hover {
 }
 
 #activePlace {
-    background-color: var(--menuBarActive);
+    background-color: var(--tr);
 }
 
 
@@ -60,3 +91,55 @@ iframe {
     overflow: scroll;
     border: 1px solid var(--menuBarDefault);
 }
+
+.palette {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    gap: 2px;
+}
+
+.palette p {
+    text-align: center;
+    line-height: var(--lineHeight);
+    height: 100%;
+}
+
+.palette :nth-child(1){
+    background-color: var(--tl);
+}
+
+.palette :nth-child(2){
+    background-color: var(--tm);
+}
+
+.palette :nth-child(3){
+    background-color: var(--tr);
+}
+
+.palette :nth-child(4){
+    background-color: var(--ml);
+}
+
+.palette :nth-child(5){
+    background-color: var(--mm);
+}
+
+.palette :nth-child(6){
+    background-color: var(--mr);
+}
+.palette :nth-child(7){
+    background-color: var(--bl);
+}
+
+.palette :nth-child(8){
+    background-color: var(--bm);
+}
+
+.palette :nth-child(9){
+    background-color: var(--br);
+}
+
